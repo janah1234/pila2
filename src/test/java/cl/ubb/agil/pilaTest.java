@@ -17,6 +17,27 @@ public class pilaTest {
 		
 		assertThat(estado,is(true));
 	}
-
-
+	
+	@Test
+	public void agregarUnoNoEstaVacia(){
+		
+		pila = new pila();
+		pila.push(1);
+		
+		boolean estado = pila.vacia();		
+	
+		assertThat(estado,is(false));
+	}
+	
+	public void agregarUnoYDosNoEstaVacia(){
+		
+		pila = new pila();
+		
+		pila.push(1);
+		pila.push(2);
+		
+		boolean estado = pila.vacia();
+		
+		assertThat(estado,is(false));
+	}
 }

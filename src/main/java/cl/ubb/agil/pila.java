@@ -13,4 +13,10 @@ public class pila {
 		}
 		
 	}
+	
+	public void push (int elem){
+		tope++;
+		pila [tope] = elem;
+		
+	}
 }
